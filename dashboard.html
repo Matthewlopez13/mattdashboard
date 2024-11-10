@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dashboard - Garcia & Lopez Personal Finance Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard">
+    <header>
+        <nav>
+            <a href="index.html"><img src="image/G__1_-removebg-preview.png" alt="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="budgeting.html">Budgeting</a></li>
+                <li><a href="investing.html">Investing</a></li>
+                <li><a href="debt.html">Debt Management</a></li>
+                <li><a href="dashboard.html">Data Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Website Data Dashboard</h1>
+
+        <section>
+            <h2>Page Views</h2>
+            <canvas id="pageViewsChart"></canvas>
+        </section>
+
+        <section>
+            <h2>User Interactions</h2>
+            <canvas id="userInteractionsChart"></canvas>
+        </section>
+
+        <section>
+            <h2>Conversion Rates</h2>
+            <canvas id="conversionRatesChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Garcia & Lopez Personal Finance Blog</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

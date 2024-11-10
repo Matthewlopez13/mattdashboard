@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0;
+    text-align: left;
+    gap: 20px;
+}
+
+header img {
+    height: 140px;
+    width: 150px;
+    margin-left: 7%;
+}
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffdd57;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-right: 0; /* Reset padding if needed */
+    margin-left: 10px; /* Adjust this value to move the entire list to the left */
+}
+
+nav ul li {
+    margin-left: 1rem; /* You can adjust this value to control the spacing between the list items */
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    
+}
+
+nav ul li a:hover {
+    color: #1bc013;
+}
+section {
+    margin: 20px;
+    padding: 20px;
+}
+
+#recent-posts {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#recent-posts h2 {
+    margin-bottom: 20px;
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    transition: all 500ms ease-in-out;
+}
+.articles-container img:hover{
+    transform: scale(1.1);
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+.articles-container a h5{
+    text-decoration: none; 
+    color: black;
+}
+.articles-container a:hover h5 {
+    color: green; 
+    text-decoration: underline; 
+    cursor: pointer; 
+    transition: color 300ms ease-in-out; 
+}
+.articles-container p{
+    color: black;
+}
+
+#recent-posts article {
+    flex: 0 1 45%; 
+    max-width: 300px; 
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#recent-posts article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#recent-posts article h5 {
+    margin-top: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+#recent-posts h2{
+    margin-right: 60%;
+    color: green;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+#subscribe {
+    text-align: center;
+}
+#subscribe label{
+    text-align: center;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+.quote {
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/chart.gif);
+    background-size: cover;
+    margin-top: 0;
+    position: relative;
+}
+
+.quote h2 {
+    font-size: 40px;
+    color: #22BAA0;
+}
+
+.input-container {
+    position: relative;
+    width: 300px; 
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#email {
+    width: 100%; 
+    height: 40px; 
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    box-sizing: border-box; 
+}
+
+button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+#subscribe p{
+    font-size: 25px;
+    color: greenyellow;
+}
+#post6 img{
+    margin-bottom: 30px;
+}
+.budgeting-section {
+    background-color:#000000;
+    padding: 0;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.budgeting-section h1 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.budgeting-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.budgeting-section p {
+    font-size: 18px;
+    color: #f6ff00;
+    line-height: 1.6;
+    margin: 0 auto 20px;
+    max-width: 800px;
+}
+
+/* Budgeting Tips/Articles Grid */
+.budgeting-tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.budgeting-tip {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.budgeting-tip:hover {
+    transform: scale(1.05);
+}
+
+.budgeting-tip h3 {
+    font-size: 22px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.budgeting-tip p {
+    font-size: 16px;
+    color: #777;
+}
+
+.budgeting-cta {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.budgeting-cta h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.budgeting-cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#budgt-btn{
+    background-color: rgb(255, 0, 0);
+
+}
+
+@media (max-width: 768px) {
+    .budgeting-tips {
+        flex-direction: column;
+    }
+
+    .budgeting-tip {
+        max-width: 100%;
+    }
+}
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-right: 20px;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #1bc013;
+}
+
+.hero-section {
+    text-align: center;
+    background: url('image/finance-banner.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.investing-page {
+    padding: 50px;
+    background: rgba(0,0,0,0.5);
+    color: #333;
+    margin-top: 10%;
+}
+.investing-page h1{
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+.investing-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.investing-tips {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #4CAF50;
+}
+
+.investing-tips h2 {
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+.investing-tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.investing-tips ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.investment-graph {
+    flex: 1;
+    text-align: center;
+}
+
+.investment-graph h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.investment-graph img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.investment-resources {
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.investment-resources h2 {
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+.investment-resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.investment-resources ul li {
+    margin-bottom: 10px;
+}
+
+.investment-resources ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.investment-resources ul li a:hover {
+    color: #4CAF50;
+}
+
+.motiv {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/investing-background.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+
+.debt-management-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/34fea55e-4701-420d-8ed8-5c3fac065dfa.gif');
+    background-size: cover;
+    padding: 60px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.debt-management-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.debt-management-hero p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.content-section {
+    padding: 40px;
+    background-color: #000000;
+    text-align: left;
+}
+
+.content-section h2 {
+    font-size: 36px;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.tip {
+    flex: 1;
+    max-width: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tip:hover {
+    transform: scale(1.05);
+}
+
+.tip h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.tip p {
+    font-size: 16px;
+    color: #555;
+}
+.author {
+    background-color: #00143d;
+    border-radius: 10px;
+    padding: 18px;
+    color: white;  
+    align-items: center;
+    display: flex; /* Add this to align items horizontally */
+    flex-direction: column; /* This keeps the inner content stacked initially */
+    margin-bottom: 40px
+}
+
+.info-check-container {
+    display: flex; /* Add this to make the .info and .check align horizontally */
+    justify-content: space-between; /* Adjusts space between the info and check */
+    width: 100%; /* Ensures the container takes full width */
+}
+
+.info {
+    margin-right: 10px;
+
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2; 
+    margin-right: 20%;
+    font-size: 35px;
+}
+
+.author img {
+    height: 150px;
+    border-radius: 50%;
+}
+.check ul li:before {
+    content: '\2713';
+    display: inline-block;
+    color: red;
+    padding: 0 6px 0 0;
+}
+
+.check ul li {
+    list-style-type: none;
+    font-size: 1em;
+}
+.speech{
+    background: url(image/blue.jpg);
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: o;
+    margin-left: -2%;
+}
+.speech img{
+   height:300px;
+}
+.news{
+    width: 50%;
+}
+
+.news p{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: -25%;
+}
+.news h3{
+    font-size: 35px;
+    margin-top: 5%;
+    color: yellow;
+    margin-left: -50%;
+}
+.budg{
+    background-color: green;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20%;
+}
+.inv{
+    background: url(image/AI-in-Stock-Market.gif)no-repeat;
+    background-size: cover;
+}
+.debt-body{
+    margin-top: 50px;
+    background: url(image/34fea55e-4701-420d-8ed8-5c3fac065dfa.gif)no-repeat;
+    background-size: cover;
+}
+.budg-body{
+    background-color: #000000;
+}
+.index{
+    background-color: black;
+}
+#aron{
+    border-radius: 35%;
+}
+ 
